@@ -1,0 +1,188 @@
+/*The designing of Home of RLS Term-Report page*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+body{
+    background-color: rgb(1, 34, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    height: 4cm;
+    width: 4cm;
+    border-radius: 50%;
+}
+form{
+    margin-right: 30%;
+    margin-left: 30%;
+    backdrop-filter: blur(25px);
+    border-radius: 5%;
+    text-align: center;
+    margin-bottom: 0%;
+}
+input{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: #fefefe13;
+    border-color: transparent;
+    height: 1cm;
+    width: 7cm;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+::placeholder{
+    color: black;
+    text-align: center;
+    text-shadow: brown;
+}
+.button{
+    background-color: rgb(37, 122, 37);
+    margin-bottom: 25px;
+    border-radius: 20px;
+    color: black;
+}
+.button:active{
+    background-color: rgb(39, 71, 71);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+}
+.button:hover{
+    background: #e2df29;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+.head{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightgreen;
+    text-align: center;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(46, 194, 46);
+    margin-top: 20px;
+    text-shadow: #031e4213 ;
+}
+.div1{
+    background-color: transparent;
+    height: 3cm;
+    fill: seashell;
+}
+.div3{
+    background-image: url(img_e1532.jpg);
+    border-radius: 3%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.footer-col{
+    width: 22%;
+    padding: 0 15px;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    color: rgb(138, 133, 133);
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.links{
+    display: -webkit-inline-flex;
+    margin-left: -11%;
+}
+.link{
+    margin-left: -15%;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+h5{
+    text-align: center;
+    color: rgb(207, 212, 207);
+    margin-bottom: 0%;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width) {
+    .footer-col {
+        width: 100px;
+    }
+}
+.div4{
+    height: 3cm;
+}
+@media(max-width: 767px) {
+    form{
+        margin-right: 30%;
+        margin-left: 30%;
+        backdrop-filter: blur(15px);
+        border-radius: 5%;
+        text-align: center;
+        margin-bottom: 1%;
+        width: 40%;
+    }
+}
