@@ -87,7 +87,7 @@ h1{
     fill: seashell;
 }
 .div3{
-    background-image: url('photos/IMG_E1532.JPG');
+    background-image: url(photos/IMG_E1532.JPG);
     border-radius: 3%;
     position: relative;
     background-repeat: no-repeat;
