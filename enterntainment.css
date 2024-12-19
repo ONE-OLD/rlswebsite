@@ -1,0 +1,264 @@
+body{
+    background-image: url('photos/IMG_E1532.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    background: #1d491b;
+    width: 80px;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    
+    
+}
+
+nav:hover{
+    width: 7cm;
+    transition: 0.3s;
+}
+
+nav button{
+    background-color: #1d491b;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 2cm;
+    font-size: 20px;
+    width: 100%;
+}
+
+.nav{
+    font-size: 15px;
+}
+
+nav button:hover{
+    background-color: #0d200c;
+}
+
+.logo{
+    height: 2cm;
+    width: 2cm;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.text{
+    background-color: rgba(250, 235, 215, 0.452);
+    margin-top: 0;
+    margin-top: -2.5%;
+    width: 100%;
+}
+
+.head{
+    color: rgb(25, 136, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2.5%;
+    text-align: center;
+}
+.wel,.intro{
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.home,.home1 { 
+    margin-left: 2cm; 
+    
+}
+.introduction .head{
+    font-size: 25px;
+    color: #0d200c;
+}
+.introduction,.imessage{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imessage{
+    text-align: center;
+}
+.text1{
+    background: url('photos/2022-07-23.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.introduction{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+footer{
+    background-color: #175f138f;
+    margin-left: 1.91cm;
+    padding: 10px;
+}
+
+.footer-col{
+    width: 22%;
+    padding: 0 15px;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #00ff00;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: none;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    rotate: 360deg;
+}
+
+.links{
+    display: -webkit-inline-flex;
+    margin-left: -11%;
+}
+.link{
+    margin-left: -15%;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+h5{
+    text-align: center;
+    color: rgb(207, 212, 207);
+    margin-bottom: 0%;
+}
+
+.ol li{
+    font-weight: bolder;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
+
+
+@media (max-width: 600px) {
+    nav{
+        width: 100%;
+        height: 2.5cm;
+        box-shadow: none;
+    }
+    nav button{
+        width: auto;
+        margin-left: 0.5cm;
+        display: inline-table;
+    }
+    .introduction .head{
+        font-size: 15px;
+    }
+    .buttons{
+        width: 100%;
+    }
+    .n .head{
+        display: none;
+    }
+    nav:hover{
+        width: 100%;
+    }
+    .home1{
+        margin-left: 0%;
+    }
+    .home{
+        margin-top: 3cm;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .head,.wel,.intro{
+        font-size: 10px;
+    }
+    .nav{
+        font-size: 12px;
+    }
+    .logo{
+        height: 1cm;
+        width: 1cm;
+    }
+    .introduction,.imessage{
+        width: 100%;
+        font-size: 10px;
+    }
+    .footer-col h4{
+        font-size: 8px;
+        margin: 0%;
+    }
+    .footer-col ul li a, .footer-col .social-links a, h5{
+        font-size: 10%;
+        margin-right: 0%;
+    }
+    .footer-col .social-links a{
+        width: 20px;
+        height: 20px;
+        margin-right: 0.1cm;
+    }
+    footer{
+        margin-left: 0%;
+    }
+    .ol li{
+        font-size: 15px;
+        font: lighter;
+    }
+
+
+
+}
