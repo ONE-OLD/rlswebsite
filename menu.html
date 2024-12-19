@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="photos/Untitled.jpg">
+
+    <title>Rwamagana Leaders' School</title>
+    <style>
+        .section { display: none; margin-left: 1.5cm; text-align: center; }
+        .active { display: block; }
+        #fullImg {
+            transform: scale(1); /* Default scale */
+            transform-origin: center center; /* Center zoom */
+            transition: transform 0.3s ease; /* Smooth transition */
+            width: 600px;
+            margin: 50px auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .zoomin {
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.534);
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            z-index: 1000;
+        }
+
+        .zoomin:hover{
+            color: #969696;
+        }
+
+        .zoomout{
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.534);
+            color: #ffffff;
+
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            z-index: 1000;
+        }
+        .zoomout:hover{
+            color: #969696;
+        }
+
+        /* Optional: Disable button styles */
+        .zoomout:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        .zoomin:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+
+    </style>
+     <script>
+            // JavaScript function to handle navigation
+            function navigate(pageId) {
+                // Hide all pages
+                const pages = document.querySelectorAll('.page');
+                pages.forEach(page => page.classList.remove('active'));
+        
+                // Show the selected page
+                document.getElementById(pageId).classList.add('active');
+            }
+        
+            // Optional: Handle navigation using URL hash (e.g., #about)
+            window.addEventListener('hashchange', () => {
+                const pageId = location.hash.substring(1) || 'home';  // Default to 'home'
+                navigate(pageId);
+            });
+        
+            // Load the correct page on initial load based on the URL hash
+            window.addEventListener('load', () => {
+                const pageId = location.hash.substring(1) || 'home';
+                navigate(pageId);
+            });
+    </script>
+        <script>
+            function showSection(sectionId) {
+                document.querySelectorAll('.section').forEach(div => {
+                    div.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            }
+        </script>
+
+    
+    
+    <link rel="stylesheet" href="home.css">
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+   formbutton("create", {action: "https://formspree.io/f/xldelprq"})
+</script>
+</head>
+<body>
+    <nav>
+        <script>
+            function goToHome() {
+                window.location.href = 'RLS.html';
+            }
+        </script>
+        <img class="logo" src="photos/Untitled.jpg" alt="" onclick="goToHome()"><br>
+        <P class="head">RLS</P>
+        <button onclick="showSection('home')"><i class="fa-solid fa-house"></i><p class="nav">Home</p></button>
+        <button onclick="showSection('about')"><i class="fa-solid fa-newspaper"></i><p class="nav">News</p></button>
+        <button onclick="showSection('Images')"><i class="fa-solid fa-image"></i><p class="nav">Gallery</p></button>
+        <button onclick="showSection('address')"><i class="fa-solid fa-address-book"></i><p class="nav">Contact</p></button>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="home" class="section">
+        <div id="text" class="text">
+            <h1 class="head">RWAMAGANA LEADERS' SCHOOL</h1><br>
+            <h1 class="wel">Welcome</h1>
+            <p class="intro">Welcome to <b>Rwamagana Leaders' School</b>, We're glad you're here. <br> We're thrilled to have you here. Whether you're exploring for the first time or returning for more,<br> feel free to browse around, discover new updates, and connect with what inspires you. Our goal is to make you to get more information about this school, students, and staff members. <br> If you need anything, don't hesitate to reach out—we're here to help every step of the way. Enjoy your visit!</p><br>
+            <p class="intro" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><u style="color: red;">ANNOUNCEMENT</u> : <i>The easiest way of checking result of the student of End-Term or Mid-Term is <a href="tel: *775*1# " style="color: rgb(0, 4, 255); text-decoration: none;">*775*1# </a>. </i></p>
+        </div>
+        <div id="youtube" class="youtube">
+           <iframe width="888" height="412" src="https://www.youtube.com/embed/t_NyA6Qy0so" title="Rwamagana Leaders’ School" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    
+       <div id="menu" class="menu">
+        <div class="img">
+            <a href="enterntainment.html"><button class="button1" type="button">Enterntainment</button></a>
+        </div>
+    
+        <div class="img1">
+            <button class="button2" type="button" onclick="entButton()">Sports</button>
+        </div>
+    
+        <div class="img2">
+            <button class="button3" type="button" onclick="entButton()">Scholarships</button>
+        </div>
+    
+        <div class="img3">
+            <button class="button4" type="button" onclick="entButton()">Prefects</button>
+        </div>
+    
+        <div class="img4">
+            <button class="button5" type="button" onclick="entButton()">Staff Members</button>
+        </div>
+        <div class="img5">
+            <button class="button6" type="button" onclick="entButton()">Our Story</button>
+        </div>
+    
+       </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="about" class="section">
+        <h1>About Us</h1>
+        <p>This is the about section.</p>
+    </div>
+
+    <div id="Images" class="section">
+        <div class="text">
+            <h1 class="head">RWAMAGANA LEADERS' SCHOOL</h1><br>
+            <h1 class="wel">IMAGES</h1>
+            <p class="intro">Hello once again, the following images, are pictures that can explain how we work at school and other <br> activities that done at school.</p>
+        </div>
+        <div class="full-img" id="fullImgBox">
+            <img src="photos/355071725_731558865636379_3736554800341743610_n.jpg" id="fullImg">
+            <button class="zoomin" onclick="zoomIn()">Zoom In</button>
+            <button class="zoomout" onclick="zoomOut()">Zoom Out</button>
+            <script>
+                let scale = 1;
+                const minScale = 1; // Minimum zoom out level (50%)
+                const maxScale = 20.0; // Maximum zoom in level (200%)
+        
+                const content = document.getElementById("fullImg");
+                const zoomInBtn = document.getElementById("zoomInBtn");
+                const zoomOutBtn = document.getElementById("zoomOutBtn");
+        
+                function updateButtons() {
+                    // Disable Zoom In button if scale >= maxScale
+                    if (scale >= maxScale) {
+                        zoomInBtn.disabled = true;
+                    } else {
+                        zoomInBtn.disabled = false;
+                    }
+        
+                    // Disable Zoom Out button if scale <= minScale
+                    if (scale <= minScale) {
+                        zoomOutBtn.disabled = true;
+                    } else {
+                        zoomOutBtn.disabled = false;
+                    }
+                }
+        
+                function zoomIn() {
+                    if (scale < maxScale) { // Check maximum scale
+                        scale += 0.5;
+                        if (scale > maxScale) {
+                            scale = maxScale; // Prevent exceeding maxScale
+                        }
+                        content.style.transform = `scale(${scale})`;
+                        updateButtons();
+                    } else {
+                        alert("Reached maximum zoom in level.");
+                    }
+                }
+        
+                function zoomOut() {
+                    if (scale > minScale) { // Check minimum scale
+                        scale -= 0.5;
+                        if (scale < minScale) {
+                            scale = minScale; // Prevent going below minScale
+                        }
+                        content.style.transform = `scale(${scale})`;
+                        updateButtons();
+                    } else {
+                        alert("Reached minimum zoom out level.");
+                    }
+                }
+        
+                // Initialize button states
+                updateButtons();
+            </script>
+            <span onclick="closeFullImg()"><i class="fa-solid fa-xmark"></i>close</span>
+        </div>
+        <div class="image">
+            <div class="box">
+            <div class="grid"><img src="photos/355071725_731558865636379_3736554800341743610_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/355071725_731558865636379_3736554800341743610_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/90796716_207619357323828_6429244881637474304_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/90796716_207619357323828_6429244881637474304_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/86802842_178758283543269_5436233165603602432_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/86802842_178758283543269_5436233165603602432_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/assemble.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/assemble.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/reginald.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/reginald.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/laissa and reginald.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/laissa and reginald.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/kayumba.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/kayumba.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/babra.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/babra.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/vannesa.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/vannesa.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/DOS.JPG" onclick="openFullImg(this.src)"><a href="" download="photos/DOS.JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/DOS (2).JPG" onclick="openFullImg(this.src)"><a href="" download="photos/DOS (2).JPG"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/163281299_461704251915336_9057106096619367748_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/163281299_461704251915336_9057106096619367748_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/71706333_127722278646870_4952792651788189696_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/71706333_127722278646870_4952792651788189696_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/366178244_766384028820529_4002115965798574471_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/366178244_766384028820529_4002115965798574471_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/365653935_764031079055824_952850170869143550_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/365653935_764031079055824_952850170869143550_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/FyvUccMWIActy3W.jpeg" onclick="openFullImg(this.src)"><a href="" download="photos/FyvUccMWIActy3W.jpeg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/FyvUccwWcAEL6RV.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/FyvUccwWcAEL6RV.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/FyvUW4HWwAA479L.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/FyvUW4HWwAA479L.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/2022-07-24.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/2022-07-24.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/380361476_739076998388270_9071735417715529313_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/380361476_739076998388270_9071735417715529313_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/454008306_927946739501294_8338980946281694465_n.jpg" onclick="openFullImg(this.src)"><a href="" download="photos/454008306_927946739501294_8338980946281694465_n.jpg"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+            <div class="grid"><img src="photos/a6d2e3_fa1df7e03ec24664a24bc56f3f983b3b~mv2.webp" onclick="openFullImg(this.src)"><a href="" download="photos/a6d2e3_fa1df7e03ec24664a24bc56f3f983b3b~mv2.webp"><button type="button"><i class="fa-solid fa-download"></i> DOWNLOAD</button></a></div>
+
+
+
+            </div>
+
+
+
+            <script> 
+                var fullImgBox = document.getElementById("fullImgBox");
+                var fullImg = document.getElementById("fullImg");
+                function openFullImg(pic){
+                    fullImgBox.style.display = "flex";
+                    fullImg.src = pic;
+                }
+
+                function closeFullImg(){
+                    fullImgBox.style.display = "none";
+                }
+        
+            </script>
+        </div>
+    </div>
+
+    <div id="address" class="section">
+        <div class="text">
+            <h1 class="head">RWAMAGANA LEADERS' SCHOOL</h1><br>
+            <h1 class="wel">CONTACT</h1>
+            <p class="intro">We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, <br> feel free to fill out the form below. Your message means a lot to us, and we'll do our best to get back to you as soon as possible. <br> Don't hesitate—reach out today, and let's start a conversation!</p>    
+        </div>
+        <div class="form1">
+            <form action="https://formspree.io/f/mrbglyzy" method="POST">
+               <h1 class="head1">MESSAGE</h1>
+               <p class="head1">Text for us, we will send you feedback on your Email.</p>
+               <input type="text" name="Names" placeholder="Full Names" required><br>
+               <input type="email" name="email" placeholder="Email" required><br>
+               <input type="number" name="phone number" placeholder="Phone Number" required><br>
+               <textarea name="Message" id="" required placeholder="Message..."></textarea><br>
+               <input class="submit" type="submit" value="SEND">
+            </form>    
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+       <footer>
+        <div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="link">
+                        <li><a href="tel: +250783755971">+250 783 755 971</a></li>
+                        <li><a href="mailto: rwamaluthsch@gmail.com">rwamaluthsch@gmail.com</a></li>
+                        <li><a href="mailto: rwamamaganaleadersschool@gmail.com">rwamaganaleadersschool@gmail.com</a></li>
+                        <li><a href="#">PO Box 82</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Adress</h4>
+                    <ul class="link">
+                        <li><a href="#">Rwamagana/Rwanda</a></li>
+                        <li><a href="#">Eastern province</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul class="link">
+                        <li><a href="#">If you get some problem you can contuct us. All requirement served.</a></li>
+                        <li><a href="#">This RLS website is containing with all information <br> since started.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <ul class="links">
+                            <li class="link1"><a href="https://www.facebook.com/rwamaganaleaders"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="link2"><a href="https://www.instagram.com/rls_updates/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                            <li class="link3"><a href="https://x.com/RLeadersSchool"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="link3"><a href="tel: +250783755971"><i class="fa-solid fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>&copy;CopyrightRwamaganaLeaders'School2024</h5>
+    
+       </footer>
+    
+    
+    </div>
+
+
+
+
+</body>
+</html>
