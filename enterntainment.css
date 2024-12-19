@@ -210,6 +210,9 @@ h5{
     .buttons{
         width: 100%;
     }
+    button .nav{
+        margin-left: -70%;
+    }    
     .n .head{
         display: none;
     }
